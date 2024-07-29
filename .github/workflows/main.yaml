@@ -1,4 +1,4 @@
-name: Production workflow - Lambda Function - Prod
+name: Pipeline de prod
 on:
   push:
     branches: [main]
