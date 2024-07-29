@@ -1,0 +1,14 @@
+name: Pipeline de feature
+
+on:
+  push:
+    branches:
+      - "feature**"
+
+jobs:
+  ci-program:
+    uses: PePires58/ReusableWorkflows/.github/workflows/006_dotnet_build.yaml@main
+    with:
+      working-directory: ./
+      execute-unit-tests: true
+      dotnet-version: '8.0'
